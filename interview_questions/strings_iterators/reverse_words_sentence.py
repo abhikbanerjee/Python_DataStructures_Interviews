@@ -1,14 +1,14 @@
 import re
 
 
-def reverser_words_sentence_1(sentence : str):
+def reverse_words_sentence_1(sentence : str):
 	re.sub("//s+", "", sentence)
 	words = sentence.split(" ")
 	reversed_str = " ".join(words[::-1])
 	return reversed_str
 
 
-def reverser_words_sentence_2(sentence: str):
+def reverse_words_sentence_2(sentence: str):
 	rev_sent = sentence[::-1]
 	rev_sent = [i for i in rev_sent]
 
@@ -34,8 +34,8 @@ def reverser_words_sentence_2(sentence: str):
 def main():
 	sentence = "Hello I am Here!!"
 
-	print("Reverse words in a sentence 1 - ",reverser_words_sentence_1(sentence))
-	print("Reverse words in a sentence 2 - ", reverser_words_sentence_2(sentence))
+	print("Reverse words in a sentence 1 - ",reverse_words_sentence_1(sentence))
+	print("Reverse words in a sentence 2 - ", reverse_words_sentence_2(sentence))
 
 
 if __name__=='__main__':
