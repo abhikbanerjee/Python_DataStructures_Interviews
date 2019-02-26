@@ -1,5 +1,7 @@
 import collections
 
+
+# Does not work code
 def anagram_approach_2(word_list):
 	anagram_dict = {}
 	for word in word_list:

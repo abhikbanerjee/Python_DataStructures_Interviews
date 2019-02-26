@@ -1,7 +1,6 @@
-import heapq
-
 
 # Given a sorted list and 2 values k and x, find the top k elements which are the closest to the variable x
+
 
 def find_closest_elements(arr: 'List[int]', k: 'int', x: 'int') -> 'List[int]':
 	if len(arr) == 0 or k == 0:
