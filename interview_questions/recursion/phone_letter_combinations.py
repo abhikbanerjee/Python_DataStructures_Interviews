@@ -6,6 +6,8 @@ mapping = ["0", "1", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"]
 
 
 def generate_phone_combinations(number: str):
+	if len(number) == 0:
+		return []
 	def add_combinations(digit: int):
 		if digit == len(number):
 			final_combinations.append("".join(partial_combinations))

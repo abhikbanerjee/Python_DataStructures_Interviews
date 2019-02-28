@@ -12,13 +12,13 @@ def merge_two_lists(l1:ListNode, l2:ListNode):
 			l2 = l2.next
 
 
-def main():
-	l1 = create_list()
-	l2 = create_list()
-	l3 = merge_two_lists(l1, l2)
+# def main():
+	# l1 = create_list()
+	# l2 = create_list()
+	# l3 = merge_two_lists(l1, l2)
+	#
+	# print_list(l3)
 
-	print_list(l3)
 
-
-if __name__ == '__main__':
-	main()
+# if __name__ == '__main__':
+# 	main()

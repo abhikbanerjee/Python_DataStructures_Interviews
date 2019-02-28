@@ -31,7 +31,7 @@ def string_concatenate(my_str: str):
 def superReducedString(my_str:str):
 	while not is_reduced(my_str):
 		res = []
-		i=0
+		i = 0
 		while i < len(my_str):
 			if i == len(my_str)-1:
 				res.append(my_str[len(my_str)-1])
