@@ -11,9 +11,11 @@ def remove_duplicates(nums):
 		i += 1
 	return write_index-1
 
+
 def print_arr(arr, index):
 	for i in range(0, index):
 		print(arr[i])
+
 
 def main():
 	ar1 = [1,1,2,2,3,4,5,5]

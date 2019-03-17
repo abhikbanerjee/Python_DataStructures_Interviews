@@ -8,7 +8,7 @@ animal_names = ["cat","mouse","horse", "cat", "cat", "elephant", "horse", "mouse
 def top_k_animals(animals=animal_names, max_animals=3):
 	animals_dict = {}
 	for animal in animals:
-		if animal in animals_dict.keys():
+		if animal in animals_dict:
 			animals_dict[animal] += 1
 		else:
 			animals_dict[animal] = 1

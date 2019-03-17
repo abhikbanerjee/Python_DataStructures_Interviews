@@ -3,7 +3,7 @@ def odd_even_swap(li: list):
 	lower_bound = 0
 	upper_bound = len(li)-1
 
-	while lower_bound<upper_bound:
+	while lower_bound < upper_bound:
 		if li[lower_bound]%2 == 0:
 			li[lower_bound], li[upper_bound] = li[upper_bound], li[lower_bound]
 			upper_bound -= 1

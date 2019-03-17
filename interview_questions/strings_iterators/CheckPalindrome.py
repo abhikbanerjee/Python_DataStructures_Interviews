@@ -5,12 +5,12 @@ def is_palindrome(str_to_check):
 	# initialize 2 pointers to read from front and back
 	i,j = 0, len(str_to_check)-1
 
-	while i<j:
+	while i < j:
 		if not str_to_check[i].isalnum():
-			i +=1
+			i += 1
 			continue
 		if not str_to_check[j].isalnum():
-			j -=1
+			j -= 1
 			continue
 		#check the alphanumeric characters are the same
 		if str_to_check[i] != str_to_check[j]:

@@ -3,6 +3,7 @@ from collections import deque
 
 queue = deque()
 
+
 class Graph:
 	def __init__(self):
 		self.graph = []
@@ -24,7 +25,7 @@ class Graph:
 		print("Created a simple graph")
 
 
-def depth_first_search(graphnode):
+def depth_first_search(graphnode: GraphNode):
 	if not graphnode:
 		return
 	if not graphnode.visited:
@@ -36,7 +37,7 @@ def depth_first_search(graphnode):
 	return
 
 
-def breadth_first_search(graphnode):
+def breadth_first_search(graphnode: GraphNode):
 	if not graphnode:
 		return
 	# add the graphnode to the queue

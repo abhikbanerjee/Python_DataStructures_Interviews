@@ -30,7 +30,8 @@ def main():
 	points = [[6,10],[-3,3],[-2,5],[0,2]]
 	K=3
 
-	# print(k_closest(points, K))
+	print(k_closest(points, K))
+	print(" ")
 	print(k_closest_v2(points, K))
 
 if __name__=='__main__':

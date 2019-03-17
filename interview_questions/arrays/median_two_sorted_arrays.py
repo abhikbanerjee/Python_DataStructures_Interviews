@@ -2,9 +2,9 @@
 
 def find_median_sorted_arrays(nums1, nums2) -> float:
 	result = []
-	if len(nums1)==0:
+	if len(nums1) == 0:
 		result.append(nums2)
-	elif len(nums2)==0:
+	elif len(nums2) == 0:
 		result.append(nums1)
 	else:
 		i, j = 0, 0
@@ -25,7 +25,7 @@ def find_median_sorted_arrays(nums1, nums2) -> float:
 		return result[0]
 	if len(result) % 2 == 0:
 		mid = result[len(result) // 2]
-		return float((result[(len(result) - 1) // 2] + result[len(result) // 2])) / 2
+		return float((result[(len(result) - 1) // 2] + mid)) / 2
 	else:
 		return float(result[len(result)//2])
 
