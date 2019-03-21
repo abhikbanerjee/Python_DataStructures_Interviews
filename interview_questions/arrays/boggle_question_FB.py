@@ -14,6 +14,8 @@ english_words = ['apple', 'pickle', 'side', 'kick', 'sick', 'mood', 'cat',
                  'cats', 'man', 'super', 'antman', 'godzilla', 'dog', 'dot',
                  'sine', 'cos', 'signal', 'bitcoin', 'cool', 'zapper']
 
+english_words_1 = ['dog', 'dot','dag']
+
 boggle = [
     ['c', 'n', 't', 's', 's'],
     ['d', 'a', 't', 'i', 'n'],
@@ -96,7 +98,7 @@ def dfs(r, c, visited, trie, now_word, direction):
 
 def main(trie_node):
     """Initiate the search for words in boggle"""
-    trie_node = build_trie(english_words, trie_node)
+    trie_node = build_trie(english_words_1, trie_node)
 
     # print the board
     print("Given board")

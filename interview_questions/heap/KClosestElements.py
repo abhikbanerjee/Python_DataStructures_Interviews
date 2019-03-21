@@ -14,8 +14,10 @@ def find_closest_elements(arr: 'List[int]', k: 'int', x: 'int') -> 'List[int]':
 
 
 # items = [1,2,3,4,5]
-items = [0,0,1,2,3,3,4,7,7,8]
+# items = [0,0,1,2,3,3,4,7,7,8]
+
+items = [-4,-3,-1,1,2,3,4]
 
 m = 3
-n = 5
+n = 1
 print(find_closest_elements(items,m,n))

@@ -15,8 +15,11 @@ def top_k_animals(animals=animal_names, max_animals=3):
 	print(animals_dict)
 
 	#  sort the dict using sorted
-	sorted_animals = sorted(animals_dict.items(), key=lambda x: x[1], reverse=True)
+	sorted_animals = sorted(animals_dict.items(), key=lambda x: x[1], reverse=True)  # returns a list of tuples
+	print(sorted_animals)
+
 	return [k[0] for k in sorted_animals[:max_animals]]
+
 
 
 # call the top K animals from the list
