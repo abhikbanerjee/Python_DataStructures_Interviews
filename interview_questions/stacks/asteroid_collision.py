@@ -1,5 +1,6 @@
-# Refe - https://leetcode.com/problems/asteroid-collision/
+# Ref - https://leetcode.com/problems/asteroid-collision/
 
+from typing import List
 
 def asteroid_collision(asteroids):
 	asteroid_stack = []
@@ -43,12 +44,46 @@ def sign(x: int) -> int:
 	else:
 		return 1
 
+def asteroid_collision_amit(asteroids: List[int]) -> List[int]:
+	neg_elem = []
+	st = []
+	for asteroid in asteroids:
+		if len(st) == 0:
+			if asteroid < 0:
+				neg_elem.append(asteroid)
+			else:
+				st.append(asteroid)
+		elif asteroid < 0:
+			last_elem = st[-1]
+			if abs(last_elem) == abs(asteroid):
+				st.pop()
+			else:
+				while st and (abs(last_elem) <= abs(asteroid)):
+					st.pop()
+					if abs(last_elem) == abs(asteroid):
+						break
+					if st:
+						last_elem = st[-1]
+				if abs(last_elem) < abs(asteroid):
+					neg_elem.append(asteroid)
+		else:
+			st.append(asteroid)
+	if len(neg_elem)>0:
+		return (neg_elem+st)
+	else:
+		return st
+
 asteroids1 = [5,10,-5]
 asteroids2 = [8,-8]
 asteroids3 = [10,2,-5]
 asteroids4 = [-1,-1,1,2]
+asteroids5 = [-2,2,1,-2]
+asteroids6 = [1,2,1,-2]
 
-# print(asteroid_collision(asteroids1))
-# print(asteroid_collision(asteroids2))
-print(asteroid_collision(asteroids3))
-print(asteroid_collision(asteroids4))
+
+print(asteroid_collision_amit(asteroids1))
+print(asteroid_collision_amit(asteroids2))
+print(asteroid_collision_amit(asteroids3))
+print(asteroid_collision_amit(asteroids4))
+print(asteroid_collision_amit(asteroids5))
+print(asteroid_collision_amit(asteroids6))
