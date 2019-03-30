@@ -18,6 +18,10 @@ def top_k_animals(animals=animal_names, max_animals=3):
 	sorted_animals = sorted(animals_dict.items(), key=lambda x: x[1], reverse=True)  # returns a list of tuples
 	print(sorted_animals)
 
+	for k,v in animals_dict.items():
+		print(k ,":", v)
+
+
 	return [k[0] for k in sorted_animals[:max_animals]]
 
 
@@ -29,3 +33,4 @@ print(top_k_animals(animal_names, 4))
 # abc = ["ant", "cat", "mat", "dog"]
 # abc.sort()
 # print(abc)
+
