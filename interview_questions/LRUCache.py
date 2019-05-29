@@ -23,7 +23,7 @@ class LRUCache:
 
 	def pop_value(self):
 		val = self.queue.popleft()
-		self.lru_set.pop(val)
+		self.lru_set.remove(val)
 
 
 def main():
@@ -41,6 +41,12 @@ def main():
 	print("LRU Cache Queue - ", lru_cache.queue)
 	print("LRU Cache Set Size - ", len(lru_cache.lru_set))
 	lru_cache.get_value(2)
+	print("LRU Cache Queue - ", lru_cache.queue)
+	print("LRU Cache Set Size - ", len(lru_cache.lru_set))
+	lru_cache.get_value(11)
+	print("LRU Cache Queue - ", lru_cache.queue)
+	print("LRU Cache Set Size - ", len(lru_cache.lru_set))
+	lru_cache.get_value(12) # the max size is reached so the least Recently used element needs to be removed
 	print("LRU Cache Queue - ", lru_cache.queue)
 	print("LRU Cache Set Size - ", len(lru_cache.lru_set))
 
