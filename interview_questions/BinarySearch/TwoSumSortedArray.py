@@ -16,4 +16,4 @@ def two_sum(numbers: List[int], target: int) -> List[int]:
 	return -1
 
 
-print(two_sum([2,3,4], 6))
+print(two_sum([2,3,4,6,8,12], 12))
