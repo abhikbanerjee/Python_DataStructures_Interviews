@@ -25,6 +25,8 @@ d.reverse()
 # d.remove(5)
 print(d)
 
+print("length ",len(d))
+
 l1.sort(reverse=True)
 print(l1)
 
