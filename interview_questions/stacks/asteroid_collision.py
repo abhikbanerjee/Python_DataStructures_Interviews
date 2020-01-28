@@ -2,6 +2,7 @@
 
 from typing import List
 
+
 def asteroid_collision(asteroids):
 	asteroid_stack = []
 	flag = True
@@ -38,11 +39,13 @@ def asteroid_collision(asteroids):
 					val_to_append = val
 	return asteroid_stack
 
+
 def sign(x: int) -> int:
 	if x<0:
 		return -1
 	else:
 		return 1
+
 
 def asteroid_collision_amit(asteroids: List[int]) -> List[int]:
 	neg_elem = []
