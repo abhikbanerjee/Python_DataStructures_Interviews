@@ -1,7 +1,7 @@
 from typing import List
 
 
-def maxSlidingWindow(nums: List[int], k: int) -> List[int]:
+def max_sliding_window(nums: List[int], k: int) -> List[int]:
 	from collections import deque
 	result = []
 	dq = deque()
@@ -19,6 +19,7 @@ def maxSlidingWindow(nums: List[int], k: int) -> List[int]:
 			result.append(nums[dq[0]])
 	return result
 
+
 nums = [1,3,-1,-3,5,3,6,7]
 k = 3
-print(maxSlidingWindow(nums, k))
+print(max_sliding_window(nums, k))
