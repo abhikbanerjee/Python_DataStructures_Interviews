@@ -1,5 +1,3 @@
-
-
 def sorted_squared_numbers(A):
 	i = 0
 	while i < len(A):
