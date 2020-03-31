@@ -1,5 +1,3 @@
-
-
 mapping = ["0", "1", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"]
 
 # Given the mapping below, for a given phone number generate all the possible elemental permutations
@@ -29,6 +27,7 @@ def main():
 	final_comb = generate_phone_combinations(number)
 	# print(len(final_comb))
 	print(final_comb)
+
 
 if __name__ == '__main__':
 	main()

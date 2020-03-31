@@ -76,6 +76,7 @@ def asteroid_collision_amit(asteroids: List[int]) -> List[int]:
 	else:
 		return st
 
+
 asteroids1 = [5,10,-5]
 asteroids2 = [8,-8]
 asteroids3 = [10,2,-5]
