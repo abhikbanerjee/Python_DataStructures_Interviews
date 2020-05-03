@@ -18,7 +18,7 @@ class Stack:
 			print(self.stack[i])
 
 def main():
-	#stack operations
+	#stack operations		
 	s = Stack()
 	s.push(2)
 	s.push(5)
