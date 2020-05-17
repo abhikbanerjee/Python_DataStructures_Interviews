@@ -1,4 +1,3 @@
-
 strs = ["eat","tea","tan","ate","nat","bat"]
 anagrams_dict = {}
 for word in strs:
