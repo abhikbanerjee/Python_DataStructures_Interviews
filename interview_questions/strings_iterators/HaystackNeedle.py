@@ -13,5 +13,6 @@ def haystack_needle(haystack: str, needle: str) -> int:
 				return i
 		return -1
 
+
 # print(haystack_needle("mississippi", "pi"))
 print(haystack_needle("mississippi", "issipi"))
