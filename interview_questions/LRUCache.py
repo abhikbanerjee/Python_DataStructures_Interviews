@@ -15,7 +15,7 @@ class LRUCache:
 			self.queue.append(value)
 		else:
 			# The element is not present, fetch the element and update the set and queue accordingly
-			if len(self.queue)==self.cache_size:
+			if len(self.queue) == self.cache_size:
 				# pop the element least recent
 				self.pop_value()
 			self.lru_set.add(value)
