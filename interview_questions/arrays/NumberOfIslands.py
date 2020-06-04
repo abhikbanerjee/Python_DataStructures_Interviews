@@ -2,9 +2,9 @@ from typing import List
 
 
 def num_islands(grid: List[List[str]]) -> int:
-	if (not grid):
+	if not grid:
 		return 0
-	num_islands, R, C = 0, len(grid), len(grid[0])
+	num_island, R, C = 0, len(grid), len(grid[0])
 
 	# Thinking is :
 	# 1. If encounter a 1, start a DFS and find all the connected component. This will represent an island
@@ -23,13 +23,13 @@ def num_islands(grid: List[List[str]]) -> int:
 
 	for i in range(R):
 		for j in range(C):
-			if (grid[i][j] == "1"):
-				num_islands += dfs(i, j)
-	return (num_islands)
+			if grid[i][j] == "1":
+				num_island += dfs(i, j)
+	return num_island
 
 
-input = [["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]
+input1 = [["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]
 input2 = [["1","1","0","0","0"], ["1","1","0","0","0"], ["0","0","1","0","0"], ["0","0","0","1","1"]]
 
-print(num_islands(input))
+print(num_islands(input1))
 print(num_islands(input2))
