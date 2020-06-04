@@ -16,7 +16,7 @@ print("L3 - ", l3)
 # flatten a 2D list into a 1 D list
 k = [[1,2,3], [4,5,6]]
 
-l4 = [x for row in k for x in row]
+l4 = [x**2 for row in k for x in row]
 
 print("L4 - ", l4)
 
@@ -31,3 +31,8 @@ Y = ['a', 'b', 'c']
 
 l6 = [(x,y) for x in X for y in Y]
 print("L6 - ", l6)
+
+n=3
+l7 = [[0 for _ in range(n)] for _ in range(n)]
+print("L7 - ", l7)
+print(l7[2][1])
