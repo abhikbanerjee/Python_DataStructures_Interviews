@@ -1,7 +1,7 @@
 roman_int = {"I":1, "V":5, "X":10, "L":50, "C":100, "D":500, "M":1000}
 
 
-def roman_to_int(self, s: str) -> int:
+def roman_to_int(s: str) -> int:
 	new_str = "".join(reversed(s))
 	sum = roman_int[new_str[0]]
 	for ch in range(1, len(new_str)):
@@ -10,5 +10,3 @@ def roman_to_int(self, s: str) -> int:
 		else:
 			sum += roman_int[new_str[ch]]
 	return sum
-
-
