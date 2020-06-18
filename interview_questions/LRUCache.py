@@ -1,6 +1,6 @@
 from collections import deque
 
-
+# Implement a Least Recently Used Cache - LC 146
 class LRUCache:
 	def __init__(self, size=5):
 		self.queue = deque()

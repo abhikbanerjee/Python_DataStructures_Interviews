@@ -1,13 +1,13 @@
 from typing import List
 
 
+# Given an alien dictionalry and words Verify if they are lexicographically sorted - LC 953
 def alien_dict(words: List[str], order: str) -> bool:
 	alphabet = {}
 	i = 0
 	for char in order:
 		alphabet[char] = i
 		i += 1
-	# print(alphabet)
 	for i in range(len(words)):
 		for j in range(i+1, len(words)):
 			# find min between the 2 words and assign it to k

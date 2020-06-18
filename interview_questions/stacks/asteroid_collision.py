@@ -2,7 +2,9 @@
 
 from typing import List
 
-
+# Asteroid Collision problem, size is represented value and direction by sign (+ve is right and -ve is left)
+# Asteroids may collide, and if same size both explode, or the larger one remains,
+# Asteroids travelling in same direction never collide - LC 735
 def asteroid_collision(asteroids):
 	asteroid_stack = []
 	flag = True

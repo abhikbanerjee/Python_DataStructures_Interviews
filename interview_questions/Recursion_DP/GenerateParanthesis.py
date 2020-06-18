@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Generate all possible paranthesis combination given the number of paranthesis - LC 22
 def generateParenthesis(n: int) -> List[str]:
 	def gen_paran_helper(current_str: str, final_list: List[str], open_count, close_count, max_str):
 		if len(current_str) == max_str * 2:

@@ -1,4 +1,6 @@
 
+
+# Check if a given paranthesis String is Valid ? - LC 20
 def check_paran(paran_str: str) -> bool:
 
 	paran_stack = []
