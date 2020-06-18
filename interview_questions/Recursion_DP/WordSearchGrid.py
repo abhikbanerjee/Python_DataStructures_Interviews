@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Given a  2D Grid, gind if a word exists or not, in the board - LC 79
 def word_exist(board: List[List[str]], word: str) -> bool:
 	def dfs(board, i, j, count, word) -> bool:
 		if count == len(word):

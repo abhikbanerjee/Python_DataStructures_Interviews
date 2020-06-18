@@ -1,6 +1,8 @@
 from typing import List
 
 
+# DP problem find the total number of unique paths from top left to bottom right corner, given obstacles in the cells - LC 63
+# Obstacle is showd by a 1 , and empty cell by a 0
 def unique_paths_obstacles(obstacleGrid: List[List[int]]) -> int:
 	if obstacleGrid is None or len(obstacleGrid) == 0:
 		return 0

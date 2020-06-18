@@ -1,4 +1,5 @@
 
+# DP problem find the total number of unique paths from top left to bottom right corner - LC 62
 def robot_unique_paths(m: int, n: int) -> int:
 	if m < 1 or n < 1:
 		return 0

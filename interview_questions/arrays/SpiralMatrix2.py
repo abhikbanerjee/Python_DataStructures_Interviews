@@ -1,5 +1,6 @@
 from typing import List
 
+# Generate a 2D matrix in spiral order with numbers from 1 to n^2 - LC 59
 def generate_matrix(n: int) -> List[List[int]]:
 	if n == 0:
 		return []
