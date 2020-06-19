@@ -1,9 +1,10 @@
 
 
+# Check if a string ia palindrome , only check using alphanumeric characters and ignoring cases (assume empty string as palindrome) - LC:125
 def is_palindrome(str_to_check):
 	str_len = len(str_to_check)
 	# initialize 2 pointers to read from front and back
-	i,j = 0, len(str_to_check)-1
+	i,j = 0, str_len
 
 	while i < j:
 		if not str_to_check[i].isalnum():

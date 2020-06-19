@@ -10,9 +10,10 @@
 
 from typing import List
 
-def findAnagrams(s: str, p: str) -> List[int]:
+# Check if 2 strings s and t are anagrams - LC 242
+def find_anagrams(s: str, p: str) -> List[int]:
 	len_p = len(p)
-	if(len(s) ==1 and len_p ==1 ):
+	if len(s) ==1 and len_p ==1:
 		if p[0] == s[0]:
 			return 0
 		else:
@@ -25,6 +26,7 @@ def findAnagrams(s: str, p: str) -> List[int]:
 		if sorted(str_s) == sorted_p:
 			final_result.append(i)
 	return final_result
+
 
 def check_two_lists(a,b):
 	if len(a) < len(b):

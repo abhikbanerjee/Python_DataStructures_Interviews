@@ -1,5 +1,6 @@
 
 
+# Find index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack - LC:28
 def haystack_needle(haystack: str, needle: str) -> int:
 	if len(needle) == 0:
 		return 0

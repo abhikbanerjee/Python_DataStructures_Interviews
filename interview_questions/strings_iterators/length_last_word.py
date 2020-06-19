@@ -1,6 +1,5 @@
 import re
 
-s = "a"
 
 
 def lengthlastword(s):

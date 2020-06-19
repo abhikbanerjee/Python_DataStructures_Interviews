@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Find 2 numbers in a sorted array which sums to a target value LC:167
 def two_sum(numbers: List[int], target: int) -> List[int]:
 	for i, elem in enumerate(numbers):
 		low = i + 1
