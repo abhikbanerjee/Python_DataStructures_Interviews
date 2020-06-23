@@ -1,6 +1,8 @@
 # Check if a Sudoku board is valid - LC 36
 from typing import List
 
+
+# Check if Sudoku board is Valid - LC:36
 def is_valid_sudoku(board: List[List[int]]) -> bool:
 	if not board or len(board)<1:
 		return False

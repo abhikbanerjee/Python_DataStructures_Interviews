@@ -1,4 +1,4 @@
-from interview_questions.Gaphs.GraphNode import GraphNode
+from interview_questions.Graphs.GraphNode import GraphNode
 from collections import deque
 
 queue = deque()
