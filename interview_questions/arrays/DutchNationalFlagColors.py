@@ -25,4 +25,5 @@ def sort_colors(nums: List[int]) -> None:
 
 
 in_li = [2,0,2,1,1,0]
-print(sort_colors(in_li))
+sort_colors(in_li)
+print(in_li)
