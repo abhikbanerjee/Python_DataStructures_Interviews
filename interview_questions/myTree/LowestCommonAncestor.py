@@ -1,5 +1,6 @@
 
 
+
 def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
 
 	# base case if root is None
