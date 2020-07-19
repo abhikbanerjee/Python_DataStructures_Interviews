@@ -8,7 +8,7 @@ def rotate_array(nums: List[int], k: int) -> None:
 	"""
 	if k == 0 or len(nums) < 1:
 		return
-	k = k% len(nums)
+	k = k % len(nums)
 
 	def reverse(nums: List[int], start: int, end: int):
 		while start <= end:
