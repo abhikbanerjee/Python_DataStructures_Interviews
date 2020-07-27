@@ -1,7 +1,6 @@
+from interview_questions.myTree import TreeNode
 
-
-
-def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+def lowest_common_ancestor(root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
 
 	# base case if root is None
 	if root is None:
@@ -14,8 +13,8 @@ def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -
 		return root
 
 	# Look for keys in left and right subtrees
-	left_lca = self.lowestCommonAncestor(root.left, p, q)
-	right_lca = self.lowestCommonAncestor(root.right, p, q)
+	left_lca = lowest_common_ancestor(root.left, p, q)
+	right_lca = lowest_common_ancestor(root.right, p, q)
 
 	# If both of the above calls return Non - NULL, then one key
 	# is present in one subtree and other is present in other,
@@ -25,3 +24,6 @@ def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -
 
 	# Otherwise check if left subtree or right subtree is LCA
 	return left_lca if left_lca is not None else right_lca
+
+root = TreeNode()
+lowest_common_ancestor(root, root.left, root.right)
